@@ -2,7 +2,6 @@
 (setq make-backup-files nil)
 (menu-bar-mode -1)
 (global-linum-mode 1)
-
 ;;关闭启动动画
 (setq inhibit-splash-screen 1)
 
@@ -19,3 +18,8 @@
 (global-set-key (kbd"<f2>") 'open-init-file)
 
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;;recentf-file
+(require 'recentf)
+(recentf-mode 1)
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
