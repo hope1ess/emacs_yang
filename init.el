@@ -6,6 +6,7 @@
 
 ;;loadfiles
 (load-file "~/.emacs.d/lisp/init-packages.el")
+(load-file "~/.emacs.d/lisp/init-kbd.el")
 ;;end
 
 (tool-bar-mode -1)
@@ -31,10 +32,7 @@
 
 (scroll-bar-mode -1)
 
-;;recentf-file
-(require 'recentf)
-(recentf-mode 1)
-(global-set-key (kbd "C-x C-r") 'recentf-open-files)
+
 ;;-----------------------------------------------------------end---------------------------------------
 
 (custom-set-variables

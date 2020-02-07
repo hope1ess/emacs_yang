@@ -13,6 +13,14 @@
 (defvar my/packages '(
 		      company
 		      spacemacs-theme
+		      helm
+		      helm-ag
+		      ;;for search
+		      swiper
+		      ivy
+		      counsel
+		      anzu
+		      ;;end
 		      )"Default packages")
 
  (setq package-selected-packages my/packages)
@@ -48,3 +56,12 @@
 
 
 ;;---------------------------------------------end------------------------------------------
+
+;;---------------------------------------------helm-----------------------------------------
+(require 'helm)
+
+;;--------------------------------------------end helm--------------------------------------
+
+;;anzu-mode
+(global-anzu-mode 1)
+;;end-anzu-mode
