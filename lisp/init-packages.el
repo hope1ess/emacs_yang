@@ -15,12 +15,14 @@
 		      spacemacs-theme
 		      helm
 		      helm-ag
-		      ;;for search
+		      ;;---for search--
 		      swiper
 		      ivy
 		      counsel
 		      anzu
-		      ;;end
+		      ;;---better editor---
+		      smartparens
+		      
 		      )"Default packages")
 
  (setq package-selected-packages my/packages)
@@ -42,7 +44,7 @@
    (exec-path-from-shell-initialize))
 
 ;;--------------------------------------------config-end-------------------------------------
-
+(global-undo-tree-mode)
 ;;--------------------------------------------company---------------------------------------
 (require 'company)
 (global-company-mode 1)
@@ -65,3 +67,15 @@
 ;;anzu-mode
 (global-anzu-mode 1)
 ;;end-anzu-mode
+
+
+;;--------------------------------------------smartparens-----------------------------------
+(require 'smartparens-config)
+
+
+(add-hook 'c++-mode-hook 'smartparens-mode)
+(add-hook 'c-mode-hook 'smartparens-mode)
+(add-hook 'emacs-lisp-mode-hook #'smartparens-mode)
+
+
+;;-------------------------------------------end smartparens--------------------------------
