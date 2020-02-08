@@ -22,7 +22,8 @@
 		      anzu
 		      ;;---better editor---
 		      smartparens
-		      
+		      ;;---c/c++ IDE---
+		      company-c-headers
 		      )"Default packages")
 
  (setq package-selected-packages my/packages)
@@ -79,3 +80,12 @@
 
 
 ;;-------------------------------------------end smartparens--------------------------------
+
+
+;;-----------------------------------------------IDE---------------------------------------
+(add-to-list 'company-backends 'company-c-headers)
+
+;;---c/c++ headers---
+
+
+;;----------------------------------------------END IDE------------------------------------

@@ -19,6 +19,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ ;;
+ '(company-c-headers-path-system
+  (quote
+  ("/usr/include/" "/usr/local/include/" "/usr/include/c++/7.4.0")))
+
+  ;;
  '(blink-matching-delay 0)
  '(company-idle-delay 0.1)
  '(company-minimum-prefix-length 1)
@@ -28,7 +34,7 @@
  '(icomplete-max-delay-chars 1)
  '(package-selected-packages
    (quote
-    (undo-tree company spacemacs-theme helm helm-ag swiper ivy counsel anzu smartparens))))
+    (undo-tree company spacemacs-theme helm helm-ag swiper ivy counsel anzu smartparens company-c-headers))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
